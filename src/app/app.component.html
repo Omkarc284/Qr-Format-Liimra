@@ -1,0 +1,43 @@
+
+<div class="flexContainer" align= "center">
+  <h2>Take the Screenshot after entering the details below:</h2>
+  <br />
+  <br />
+  <div>
+    <div>
+      <div> <img src="https://liimra.co.in/wp-content/uploads/2020/12/Liimra-Colour-Logo-400x.png" width="200" height="85"></div>
+      <div><h2 style="font-family:'Calibri'; width:300px">{{ Name }}</h2></div>
+      <div><h3 style="font-family:'Calibri'; width:250px">{{ Address }}</h3></div>
+    </div>
+    <div>
+      <qr-code [value]="'https://liimra.co.in/welcome-to-liimra/'" [size]="width" [level]="level"></qr-code>
+    </div>
+    <div><p style="font-family:'Calibri'; width:250px"><b>{{ Msg }}</b></p></div>
+  </div>
+
+  <div>
+    
+
+    
+    <br />
+    <br />
+    <label>
+      Add Name:<input [(ngModel)]="Name" placeholder="Mr/Ms.ABC" />
+    </label>
+    <br />
+    <br />
+    <label>
+      Add Address:<input [(ngModel)]="Address" placeholder="Flat x, City." />
+    </label>
+    
+    <br />
+    <br />
+    <label>
+      Message: <input [(ngModel)]="Msg" placeholder='Msg' />
+    </label>
+    
+
+    
+
+  </div>
+</div>
